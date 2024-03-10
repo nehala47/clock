@@ -1,21 +1,8 @@
 import React from "react";
 
 export default function ButtonComponent(props) {
-  const handleHour = () => {
-    props.hoursIncrement();
-  };
 
-  const handleMinute = () => {
-    props.minutesIncrement();
-  };
-
-  const handleTime = () => {
-    props.handleResetTime();
-  };
-
-  const resetTime = () => {
-    props.resetTime();
-  };
+  const {hoursIncrement:handleHour, minutesIncrement:handleMinute, handleResetTime: handleTime, resetTime } = props;
 
   return (
     <div>
